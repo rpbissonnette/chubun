@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandarin Pronunciation Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 data-i18n="title">Mandarin Pronunciation Trainer</h1>
+        
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="en">English</button>
+            <button class="lang-btn" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="ja">日本語</button>
+        </div>
+        
+        <div class="tone-selector">
+            <button class="tone-btn active" data-tone="1">
+                <span data-i18n="tone1">First Tone</span>
+                <span class="tone-symbol">一声</span>
+            </button>
+            <button class="tone-btn" data-tone="2">
+                <span data-i18n="tone2">Second Tone</span>
+                <span class="tone-symbol">二声</span>
+            </button>
+            <button class="tone-btn" data-tone="3">
+                <span data-i18n="tone3">Third Tone</span>
+                <span class="tone-symbol">三声</span>
+            </button>
+            <button class="tone-btn" data-tone="4">
+                <span data-i18n="tone4">Fourth Tone</span>
+                <span class="tone-symbol">四声</span>
+            </button>
+        </div>
+        
+        <div class="main-content">
+            <div class="syllable-grid">
+                <div class="consonant-group">
+                    <div class="consonant-label">
+                        <span data-i18n="labials">Labials</span>
+                        <span class="chinese-label">唇音</span>
+                    </div>
+                    <div class="syllable-row">
+                        <div class="consonant">b</div>
+                        <div class="syllable" data-pinyin="ba">ba</div>
+                        <div class="syllable" data-pinyin="bo">bo</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="bai">bai</div>
+                        <div class="syllable" data-pinyin="bei">bei</div>
+                        <div class="syllable" data-pinyin="bao">bao</div>
+                        <div class="syllable" data-pinyin="ban">ban</div>
+                        <div class="syllable" data-pinyin="ben">ben</div>
+                        <div class="syllable" data-pinyin="bang">bang</div>
+                        <div class="syllable" data-pinyin="beng">beng</div>
+                        <div class="syllable" data-pinyin="bi">bi</div>
+                        <div class="syllable" data-pinyin="bian">bian</div>
+                        <div class="syllable" data-pinyin="biao">biao</div>
+                        <div class="syllable" data-pinyin="bie">bie</div>
+                        <div class="syllable" data-pinyin="bin">bin</div>
+                        <div class="syllable" data-pinyin="bing">bing</div>
+                        <div class="syllable" data-pinyin="bu">bu</div>
+                    </div>
+                    <div class="syllable-row">
+                        <div class="consonant">p</div>
+                        <div class="syllable" data-pinyin="pa">pa</div>
+                        <div class="syllable" data-pinyin="po">po</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="pai">pai</div>
+                        <div class="syllable" data-pinyin="pei">pei</div>
+                        <div class="syllable" data-pinyin="pao">pao</div>
+                        <div class="syllable" data-pinyin="pan">pan</div>
+                        <div class="syllable" data-pinyin="pen">pen</div>
+                        <div class="syllable" data-pinyin="pang">pang</div>
+                        <div class="syllable" data-pinyin="peng">peng</div>
+                        <div class="syllable" data-pinyin="pi">pi</div>
+                        <div class="syllable" data-pinyin="pian">pian</div>
+                        <div class="syllable" data-pinyin="piao">piao</div>
+                        <div class="syllable" data-pinyin="pie">pie</div>
+                        <div class="syllable" data-pinyin="pin">pin</div>
+                        <div class="syllable" data-pinyin="ping">ping</div>
+                        <div class="syllable" data-pinyin="pu">pu</div>
+                    </div>
+                    <div class="syllable-row">
+                        <div class="consonant">m</div>
+                        <div class="syllable" data-pinyin="ma">ma</div>
+                        <div class="syllable" data-pinyin="mo">mo</div>
+                        <div class="syllable" data-pinyin="me">me</div>
+                        <div class="syllable" data-pinyin="mai">mai</div>
+                        <div class="syllable" data-pinyin="mei">mei</div>
+                        <div class="syllable" data-pinyin="mao">mao</div>
+                        <div class="syllable" data-pinyin="man">man</div>
+                        <div class="syllable" data-pinyin="men">men</div>
+                        <div class="syllable" data-pinyin="mang">mang</div>
+                        <div class="syllable" data-pinyin="meng">meng</div>
+                        <div class="syllable" data-pinyin="mi">mi</div>
+                        <div class="syllable" data-pinyin="mian">mian</div>
+                        <div class="syllable" data-pinyin="miao">miao</div>
+                        <div class="syllable" data-pinyin="mie">mie</div>
+                        <div class="syllable" data-pinyin="min">min</div>
+                        <div class="syllable" data-pinyin="ming">ming</div>
+                        <div class="syllable" data-pinyin="mu">mu</div>
+                    </div>
+                </div>
+                
+                <div class="consonant-group">
+                    <div class="consonant-label">
+                        <span data-i18n="alveolars">Alveolars</span>
+                        <span class="chinese-label">舌尖音</span>
+                    </div>
+                    <div class="syllable-row">
+                        <div class="consonant">d</div>
+                        <div class="syllable" data-pinyin="da">da</div>
+                        <div class="syllable" data-pinyin="de">de</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="dai">dai</div>
+                        <div class="syllable" data-pinyin="dei">dei</div>
+                        <div class="syllable" data-pinyin="dao">dao</div>
+                        <div class="syllable" data-pinyin="dan">dan</div>
+                        <div class="syllable" data-pinyin="den">den</div>
+                        <div class="syllable" data-pinyin="dang">dang</div>
+                        <div class="syllable" data-pinyin="deng">deng</div>
+                        <div class="syllable" data-pinyin="di">di</div>
+                        <div class="syllable" data-pinyin="dian">dian</div>
+                        <div class="syllable" data-pinyin="diao">diao</div>
+                        <div class="syllable" data-pinyin="die">die</div>
+                        <div class="syllable" data-pinyin="ding">ding</div>
+                        <div class="syllable" data-pinyin="du">du</div>
+                        <div class="syllable" data-pinyin="duan">duan</div>
+                        <div class="syllable" data-pinyin="dui">dui</div>
+                        <div class="syllable" data-pinyin="dun">dun</div>
+                        <div class="syllable" data-pinyin="duo">duo</div>
+                    </div>
+                    <div class="syllable-row">
+                        <div class="consonant">t</div>
+                        <div class="syllable" data-pinyin="ta">ta</div>
+                        <div class="syllable" data-pinyin="te">te</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="tai">tai</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="tao">tao</div>
+                        <div class="syllable" data-pinyin="tan">tan</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="tang">tang</div>
+                        <div class="syllable" data-pinyin="teng">teng</div>
+                        <div class="syllable" data-pinyin="ti">ti</div>
+                        <div class="syllable" data-pinyin="tian">tian</div>
+                        <div class="syllable" data-pinyin="tiao">tiao</div>
+                        <div class="syllable" data-pinyin="tie">tie</div>
+                        <div class="syllable" data-pinyin="ting">ting</div>
+                        <div class="syllable" data-pinyin="tu">tu</div>
+                        <div class="syllable" data-pinyin="tuan">tuan</div>
+                        <div class="syllable" data-pinyin="tui">tui</div>
+                        <div class="syllable" data-pinyin="tun">tun</div>
+                        <div class="syllable" data-pinyin="tuo">tuo</div>
+                    </div>
+                </div>
+                
+                <div class="consonant-group">
+                    <div class="consonant-label">
+                        <span data-i18n="velars">Velars</span>
+                        <span class="chinese-label">舌根音</span>
+                    </div>
+                    <div class="syllable-row">
+                        <div class="consonant">g</div>
+                        <div class="syllable" data-pinyin="ga">ga</div>
+                        <div class="syllable" data-pinyin="ge">ge</div>
+                        <div class="empty-syllable"></div>
+                        <div class="syllable" data-pinyin="gai">gai</div>
+                        <div class="syllable" data-pinyin="gei">gei</div>
+                        <div class="syllable" data-pinyin="gao">gao</div>
+                        <div class="syllable" data-pinyin="gan">gan</div>
+                        <div class="syllable" data-pinyin="gen">gen</div>
+                        <div class="syllable" data-pinyin="gang">gang</div>
+                        <div class="syllable" data-pinyin="geng">geng</div>
+                        <div class="syllable" data-pinyin="gu">gu</div>
+                        <div class="syllable" data-pinyin="gua">gua</div>
+                        <div class="syllable" data-pinyin="guai">guai</div>
+                        <div class="syllable" data-pinyin="guan">guan</div>
+                        <div class="syllable" data-pinyin="guang">guang</div>
+                        <div class="syllable" data-pinyin="gui">gui</div>
+                        <div class="syllable" data-pinyin="gun">gun</div>
+                        <div class="syllable" data-pinyin="guo">guo</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="control-panel">
+                <div class="current-syllable">
+                    <h2 id="current-pinyin" data-i18n="selectSyllable">Select a syllable</h2>
+                    <div class="tone-indicator" id="tone-display" data-i18n="selectSyllableDesc">Choose a syllable to practice</div>
+                </div>
+                
+                <div class="audio-controls">
+                    <button class="audio-btn play-btn" id="play-reference">
+                        <span>🔊</span>
+                        <span data-i18n="playReference">Play Reference</span>
+                    </button>
+                    <button class="audio-btn record-btn" id="record-btn">
+                        <span>🎤</span>
+                        <span data-i18n="record">Record</span>
+                    </button>
+                </div>
+                
+                <div class="pitch-analysis">
+                    <h3 data-i18n="pitchAnalysis">Pitch Analysis</h3>
+                    <canvas class="pitch-canvas" id="pitch-canvas"></canvas>
+                    <div class="comparison-controls">
+                        <button class="comparison-btn play-reference" id="play-ref-comparison" data-i18n="reference">
+                            Reference
+                        </button>
+                        <button class="comparison-btn play-student" id="play-student-comparison" data-i18n="yourRecording">
+                            Your Recording
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="stats-panel">
+                    <h3 data-i18n="progress">Progress</h3>
+                    <div class="stat-item">
+                        <span data-i18n="syllablesPracticed">Syllables Practiced:</span>
+                        <span id="practiced-count">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span data-i18n="recordingQuality">Recording Quality:</span>
+                        <span id="quality-score">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span data-i18n="toneAccuracy">Tone Accuracy:</span>
+                        <span id="tone-accuracy">--</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+                
+                <div class="debug-info" id="debug-info">
+                    <span data-i18n="debugReady">Debug: Ready to start...</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="analysis-section" class="analysis-section" style="display: none;">
+            <!-- Analysis results will be inserted here -->
+        </div>
+    </div>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

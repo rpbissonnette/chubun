@@ -139,10 +139,24 @@ const setLanguage = (language) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const langButtons = document.querySelectorAll(".lang-btn");
-  let currentLanguage =
-    Object.keys(translations).find((lang) =>
-      navigator.language.startsWith(lang)
-    ) || "en";
+
+  const getBestAvailableLanguage = () => {
+    const availableLangs = Object.keys(translations);
+    // navigator.languages is an array of preferred languages, e.g., ["en-US", "en", "zh-CN"]
+    for (const lang of navigator.languages) {
+      if (availableLangs.includes(lang)) {
+        return lang; // Exact match, e.g., "en"
+      }
+      // Check for base language match, e.g., "en-US" should match "en"
+      const baseLang = lang.split("-")[0];
+      if (availableLangs.includes(baseLang)) {
+        return baseLang;
+      }
+    }
+    return "en"; // Default to English
+  };
+
+  let currentLanguage = getBestAvailableLanguage();
 
   const getTranslation = (key) => {
     return key
@@ -166,8 +180,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Set initial language based on browser settings or default to English
-  document
-    .querySelector(`.lang-btn[data-lang="${currentLanguage}"]`)
-    .classList.add("active");
+  const initialLangNode = document.querySelector(
+    `.lang-btn[data-lang="${currentLanguage}"]`
+  );
+  if (initialLangNode) {
+    initialLangNode.classList.add("active");
+  }
   setLanguage(currentLanguage);
 });
